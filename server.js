@@ -1,8 +1,11 @@
 var express = require('express');
-var app = express();
+var bodyParser = require('body-parser');
 
-app.get("/", function(req, res) {
-	res.send("Hello express");
+var app = express();
+app.use(bodyParser.json());
+
+app.put("/config", function(req, res) {
+	res.send(req.body);
 });
 
 app.listen(8000, function() {

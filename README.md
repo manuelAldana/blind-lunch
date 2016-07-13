@@ -7,8 +7,13 @@
 # API
 
 ```
-# hello-world
-GET	/
+# Setting configuration
+POST	/config
+
+{
+	tbd
+}
+
 
 ```
 
