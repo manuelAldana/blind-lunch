@@ -1,9 +1,8 @@
 # Intro
 
-# Start Server
+# Start Server with latest code-changes
 
-- Build image: `docker build -t blind-lunch .`
-- Run server: `docker run -p 8000:8000 --rm --name blind-lunch blind-lunch`
+- `docker rm -f blind-lunch; docker build -t blind-lunch .; docker run -p 8000:8000 --sig-proxy=false --name blind-lunch blind-lunch`
 
 # API
 
