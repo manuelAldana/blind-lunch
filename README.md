@@ -8,13 +8,16 @@
 
 ```
 # Setting configuration
-POST	/config
+PUT	/config
 
 {
-	tbd
+	"participants" : ["email1@server.com" , "email2@server.com"]
 }
 
+# Getting latest configuration
+GET 	/config
 
+see above PUT method 
 ```
 
 
